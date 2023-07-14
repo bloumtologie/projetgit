@@ -12,6 +12,655 @@
 	<h1> le chef du groupe housana vandeo benoit vous invites d'apporter <br>une modiffication chacun</h1>
          <h1>Moi c'est Djido senoussi un membre du groupe </h1>
 		 <p>merci mes chers camarades travaillons beaucoup pour etre demain en GI3</p>
+		     <header class="inscription-header">
+
+        <!-- =============== NAVBAR ===============  -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a href="./index.html" class="navbar-brand"><img src="./ressources/images/logo.png" alt="Logo" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#monMenu"
+                    aria-controls="#monMenu" aria-label="Menu pour mobile">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="monMenu">
+                    <div class="navbar-nav ml-auto">
+                        <a href="./index.html" class="nav-item nav-link">Accueil</a>
+                        <a href="./recherche.html" class="nav-item nav-link">Les voyages proposés</a>
+                        <a href="./agence.html" class="nav-item nav-link">L'agence</a>
+                        <a href="./blog.html" class="nav-item nav-link">Blog</a>
+                        <a href="./contact.html" class="nav-item nav-link" id="contact">Contact</a>
+                        <a href="./inscription.html" class="nav-item nav-link active" id="inscription">Inscription</a>
+                        <a href="./connexion.html" class="nav-item nav-link" id="connexion">Connexion</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- FORMULAIRE D'INSCRIPTION -->
+    <section class="inscription">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <h2>INSCRIPTION</h2>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6" id="inscription-prenom">
+                                <label for="#">Prénom</label>
+                                <input type="text" class="form-control inscription-control" placeholder="Votre prénom">
+                            </div>
+                            <div class="col-md-6" id="inscription-name">
+                                <label for="#">Nom</label>
+                                <input type="text" class="form-control inscription-control" placeholder="Votre nom">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6" id="inscription-mail">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4"
+                                    placeholder="exemple@contact.com">
+                            </div>
+                            <div class="form-group col-md-6" id="inscription-mdp">
+                                <label for="inputPassword4">Mot de passe</label>
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="********">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Addresse</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="123 route de...">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Addresse complémentaire</label>
+                            <input type="text" class="form-control" id="inputAddress2"
+                                placeholder="Appartement, lieu-dit...">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">Ville</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">Pays</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Choisissez votre pays</option>
+                                    <option>France</option>
+                                    <option>Angleterre</option>
+                                    <option>Espagne</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Code postal</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check" id="inscription-cgu">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    J'accepte les <a href="#" data-toggle="modal" data-target="#cguModal">conditions
+                                        générales</a>
+                                    <div class="modal fade" id="cguModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Conditions générales
+                                                    </h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                                                        culpa consequuntur rem necessitatibus accusamus? Nisi quisquam
+                                                        mollitia cum cumque eos. Nobis atque ullam dignissimos iste quae
+                                                        quam repellendus id dolores?</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-hover "
+                                                        data-dismiss="modal">Fermer</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-hover  btn-inscription">Sign in</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center" id="inscription-already">
+                <p>Vous êtes déjà inscrit ? <a href="./connexion.html">Connectez-vous</a></p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- =============== FOOTER ===============  -->
+    <footer>
+        <div class="copyright">
+            <p>Agence de voyage - 2020 <i class="fas fa-copyright"></i> <a href="#">Mentions légales</a></p>
+        </div>
+        <div class="social">
+            <i class="fab fa-facebook-square" id="fb"></i>
+            <!-- <i class="fab fa-instagram-square" id="insta"></i> -->
+            <i class="fab fa-twitter-square" id="twitter"></i>
+            <a href="https://github.com/benbd5/projet-1"><i class="fab fa-github-square" id="git"></i></a>
+        </div>
+    </footer>
+
 </body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+</script>
+
+</html><!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- FONTS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;800&display=swap" rel="stylesheet">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./ressources/css/style.css" />
+    <link rel="stylesheet" href="./ressources/css/connexion.css">
+
+    <title>Inscription</title>
+</head>
+
+<body>
+    <header class="inscription-header">
+
+        <!-- =============== NAVBAR ===============  -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a href="./index.html" class="navbar-brand"><img src="./ressources/images/logo.png" alt="Logo" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#monMenu"
+                    aria-controls="#monMenu" aria-label="Menu pour mobile">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="monMenu">
+                    <div class="navbar-nav ml-auto">
+                        <a href="./index.html" class="nav-item nav-link">Accueil</a>
+                        <a href="./recherche.html" class="nav-item nav-link">Les voyages proposés</a>
+                        <a href="./agence.html" class="nav-item nav-link">L'agence</a>
+                        <a href="./blog.html" class="nav-item nav-link">Blog</a>
+                        <a href="./contact.html" class="nav-item nav-link" id="contact">Contact</a>
+                        <a href="./inscription.html" class="nav-item nav-link active" id="inscription">Inscription</a>
+                        <a href="./connexion.html" class="nav-item nav-link" id="connexion">Connexion</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- FORMULAIRE D'INSCRIPTION -->
+    <section class="inscription">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <h2>INSCRIPTION</h2>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6" id="inscription-prenom">
+                                <label for="#">Prénom</label>
+                                <input type="text" class="form-control inscription-control" placeholder="Votre prénom">
+                            </div>
+                            <div class="col-md-6" id="inscription-name">
+                                <label for="#">Nom</label>
+                                <input type="text" class="form-control inscription-control" placeholder="Votre nom">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6" id="inscription-mail">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4"
+                                    placeholder="exemple@contact.com">
+                            </div>
+                            <div class="form-group col-md-6" id="inscription-mdp">
+                                <label for="inputPassword4">Mot de passe</label>
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="********">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Addresse</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="123 route de...">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Addresse complémentaire</label>
+                            <input type="text" class="form-control" id="inputAddress2"
+                                placeholder="Appartement, lieu-dit...">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">Ville</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">Pays</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Choisissez votre pays</option>
+                                    <option>France</option>
+                                    <option>Angleterre</option>
+                                    <option>Espagne</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Code postal</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check" id="inscription-cgu">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    J'accepte les <a href="#" data-toggle="modal" data-target="#cguModal">conditions
+                                        générales</a>
+                                    <div class="modal fade" id="cguModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Conditions générales
+                                                    </h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                                                        culpa consequuntur rem necessitatibus accusamus? Nisi quisquam
+                                                        mollitia cum cumque eos. Nobis atque ullam dignissimos iste quae
+                                                        quam repellendus id dolores?</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-hover "
+                                                        data-dismiss="modal">Fermer</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-hover  btn-inscription">Sign in</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center" id="inscription-already">
+                <p>Vous êtes déjà inscrit ? <a href="./connexion.html">Connectez-vous</a></p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- =============== FOOTER ===============  -->
+    <footer>
+        <div class="copyright">
+            <p>Agence de voyage - 2020 <i class="fas fa-copyright"></i> <a href="#">Mentions légales</a></p>
+        </div>
+        <div class="social">
+            <i class="fab fa-facebook-square" id="fb"></i>
+            <!-- <i class="fab fa-instagram-square" id="insta"></i> -->
+            <i class="fab fa-twitter-square" id="twitter"></i>
+            <a href="https://github.com/benbd5/projet-1"><i class="fab fa-github-square" id="git"></i></a>
+        </div>
+    </footer>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+</script>
+    <header class="inscription-header">
+
+        <!-- =============== NAVBAR ===============  -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a href="./index.html" class="navbar-brand"><img src="./ressources/images/logo.png" alt="Logo" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#monMenu"
+                    aria-controls="#monMenu" aria-label="Menu pour mobile">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="monMenu">
+                    <div class="navbar-nav ml-auto">
+                        <a href="./index.html" class="nav-item nav-link">Accueil</a>
+                        <a href="./recherche.html" class="nav-item nav-link">Les voyages proposés</a>
+                        <a href="./agence.html" class="nav-item nav-link">L'agence</a>
+                        <a href="./blog.html" class="nav-item nav-link">Blog</a>
+                        <a href="./contact.html" class="nav-item nav-link" id="contact">Contact</a>
+                        <a href="./inscription.html" class="nav-item nav-link active" id="inscription">Inscription</a>
+                        <a href="./connexion.html" class="nav-item nav-link" id="connexion">Connexion</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- FORMULAIRE D'INSCRIPTION -->
+    <section class="inscription">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <h2>INSCRIPTION</h2>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6" id="inscription-prenom">
+                                <label for="#">Prénom</label>
+                                <input type="text" class="form-control inscription-control" placeholder="Votre prénom">
+                            </div>
+                            <div class="col-md-6" id="inscription-name">
+                                <label for="#">Nom</label>
+                                <input type="text" class="form-control inscription-control" placeholder="Votre nom">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6" id="inscription-mail">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4"
+                                    placeholder="exemple@contact.com">
+                            </div>
+                            <div class="form-group col-md-6" id="inscription-mdp">
+                                <label for="inputPassword4">Mot de passe</label>
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="********">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Addresse</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="123 route de...">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Addresse complémentaire</label>
+                            <input type="text" class="form-control" id="inputAddress2"
+                                placeholder="Appartement, lieu-dit...">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">Ville</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">Pays</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Choisissez votre pays</option>
+                                    <option>France</option>
+                                    <option>Angleterre</option>
+                                    <option>Espagne</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Code postal</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check" id="inscription-cgu">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    J'accepte les <a href="#" data-toggle="modal" data-target="#cguModal">conditions
+                                        générales</a>
+                                    <div class="modal fade" id="cguModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Conditions générales
+                                                    </h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                                                        culpa consequuntur rem necessitatibus accusamus? Nisi quisquam
+                                                        mollitia cum cumque eos. Nobis atque ullam dignissimos iste quae
+                                                        quam repellendus id dolores?</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-hover "
+                                                        data-dismiss="modal">Fermer</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-hover  btn-inscription">Sign in</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center" id="inscription-already">
+                <p>Vous êtes déjà inscrit ? <a href="./connexion.html">Connectez-vous</a></p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- =============== FOOTER ===============  -->
+    <footer>
+        <div class="copyright">
+            <p>Agence de voyage - 2020 <i class="fas fa-copyright"></i> <a href="#">Mentions légales</a></p>
+        </div>
+        <div class="social">
+            <i class="fab fa-facebook-square" id="fb"></i>
+            <!-- <i class="fab fa-instagram-square" id="insta"></i> -->
+            <i class="fab fa-twitter-square" id="twitter"></i>
+            <a href="https://github.com/benbd5/projet-1"><i class="fab fa-github-square" id="git"></i></a>
+        </div>
+    </footer>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+</script>
+
+</html><!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- FONTS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;800&display=swap" rel="stylesheet">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./ressources/css/style.css" />
+    <link rel="stylesheet" href="./ressources/css/connexion.css">
+
+    <title>Inscription</title>
+</head>
+
+<body>
+    <header class="inscription-header">
+
+        <!-- =============== NAVBAR ===============  -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a href="./index.html" class="navbar-brand"><img src="./ressources/images/logo.png" alt="Logo" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#monMenu"
+                    aria-controls="#monMenu" aria-label="Menu pour mobile">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="monMenu">
+                    <div class="navbar-nav ml-auto">
+                        <a href="./index.html" class="nav-item nav-link">Accueil</a>
+                        <a href="./recherche.html" class="nav-item nav-link">Les voyages proposés</a>
+                        <a href="./agence.html" class="nav-item nav-link">L'agence</a>
+                        <a href="./blog.html" class="nav-item nav-link">Blog</a>
+                        <a href="./contact.html" class="nav-item nav-link" id="contact">Contact</a>
+                        <a href="./inscription.html" class="nav-item nav-link active" id="inscription">Inscription</a>
+                        <a href="./connexion.html" class="nav-item nav-link" id="connexion">Connexion</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- FORMULAIRE D'INSCRIPTION -->
+    <section class="inscription">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <h2>INSCRIPTION</h2>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6" id="inscription-prenom">
+                                <label for="#">Prénom</label>
+                                <input type="text" class="form-control inscription-control" placeholder="Votre prénom">
+                            </div>
+                            <div class="col-md-6" id="inscription-name">
+                                <label for="#">Nom</label>
+                                <input type="text" class="form-control inscription-control" placeholder="Votre nom">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6" id="inscription-mail">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4"
+                                    placeholder="exemple@contact.com">
+                            </div>
+                            <div class="form-group col-md-6" id="inscription-mdp">
+                                <label for="inputPassword4">Mot de passe</label>
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="********">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Addresse</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="123 route de...">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Addresse complémentaire</label>
+                            <input type="text" class="form-control" id="inputAddress2"
+                                placeholder="Appartement, lieu-dit...">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">Ville</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">Pays</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Choisissez votre pays</option>
+                                    <option>France</option>
+                                    <option>Angleterre</option>
+                                    <option>Espagne</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Code postal</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check" id="inscription-cgu">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    J'accepte les <a href="#" data-toggle="modal" data-target="#cguModal">conditions
+                                        générales</a>
+                                    <div class="modal fade" id="cguModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Conditions générales
+                                                    </h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                                                        culpa consequuntur rem necessitatibus accusamus? Nisi quisquam
+                                                        mollitia cum cumque eos. Nobis atque ullam dignissimos iste quae
+                                                        quam repellendus id dolores?</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-hover "
+                                                        data-dismiss="modal">Fermer</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-hover  btn-inscription">Sign in</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center" id="inscription-already">
+                <p>Vous êtes déjà inscrit ? <a href="./connexion.html">Connectez-vous</a></p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- =============== FOOTER ===============  -->
+    <footer>
+        <div class="copyright">
+            <p>Agence de voyage - 2020 <i class="fas fa-copyright"></i> <a href="#">Mentions légales</a></p>
+        </div>
+        <div class="social">
+            <i class="fab fa-facebook-square" id="fb"></i>
+            <!-- <i class="fab fa-instagram-square" id="insta"></i> -->
+            <i class="fab fa-twitter-square" id="twitter"></i>
+            <a href="https://github.com/benbd5/projet-1"><i class="fab fa-github-square" id="git"></i></a>
+        </div>
+    </footer>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+</script>
 
 </html>
